@@ -47,15 +47,15 @@ let targetDiv = document.querySelector("#target");
 
 let colornum = 0;
 
-setInterval(changeColor, 1000);
-
-function changeColor() {
+setInterval( () =>{
     targetDiv.style.backgroundColor = colours[colornum].value;
     colornum++;
     if (colornum === colours.length) {
         colornum = 0;
     }
-}
+}, 1000);
+
+
 
 
 
